@@ -41,8 +41,8 @@ def print_spiciest_foods(spicy_foods):
 def get_average_heat_level(spicy_foods):
     hotContents = (item["heat_level"] for item in spicy_foods)
     sumHeat = 0
-    for h in hotContents:
-        sumHeat = sumHeat + h
+    for temp in hotContents:
+        sumHeat = sumHeat + temp
     avgHeat = sumHeat / len(hotContents)
     return avgHeat
 
